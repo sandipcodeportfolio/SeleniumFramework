@@ -1,0 +1,4 @@
+pageObjects/LandingPage.class
+Academy/App.class
+pageObjects/LoginPage.class
+pageObjects/base.class
