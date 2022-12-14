@@ -24,7 +24,7 @@ public class base {
 	public WebDriver initializeDriver() throws IOException {
 
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("/src/main/java/resources/data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/SeleniumFramework2/ws/src/main/java/resources/data.properties");
 		System.out.println(System.getProperty("user.dir")+"/src/main/java/resources/data.properties");
 
 		prop.load(fis);
@@ -32,7 +32,7 @@ public class base {
 
 		if (browserName.equals("chrome")) {
 			// setup Chrome WebDriver
-			System.setProperty("chromedriver.chrome.driver","/src/main/java/resources/chromedriver");
+			System.setProperty("chromedriver.chrome.driver",System.getProperty("user.dir")+"/SeleniumFramework2/ws/src/main/java/resources/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 			driver = new ChromeDriver(options);
