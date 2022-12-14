@@ -24,15 +24,14 @@ public class base {
 	public WebDriver initializeDriver() throws IOException {
 
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream(
-				"/home/sandip/Documents/JavaProjects/Framework/BuildAutoFWKFromScratch-master/src/main/java/resources/data.properties");
+		FileInputStream fis = new FileInputStream(System.getProperty("user.dir")+"/src/main/java/resources/data.properties");
 
 		prop.load(fis);
 		String browserName = prop.getProperty("browser");
 
 		if (browserName.equals("chrome")) {
 			// setup Chrome WebDriver
-			System.setProperty("chromedriver.chrome.driver", "/home/sandip/Downloads/Framework/BuildAutoFWKFromScratch-master/src/main/java/resources/chromedriver");
+			System.setProperty("chromedriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/resources/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 			driver = new ChromeDriver(options);
@@ -55,7 +54,7 @@ public class base {
 
 	public void getScreenshot(String result) throws IOException {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		FileUtils.copyFile(src, new File("/home/Downloads/Framework/BuildAutoFWKFromScratch-master/src/main/screenshots/" + result + "screenshot.png"));
+		FileUtils.copyFile(src, new File(System.getProperty("user.dir")+"/src/main/screenshots/" + result + "screenshot.png"));
 	}
 
 }
