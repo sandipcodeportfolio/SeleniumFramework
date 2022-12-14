@@ -5,7 +5,7 @@
 		<listener class-name="Academy.listeners"/>
 	</listeners>
 
-	<!--test name="Validate the Title of Home Page">
+	<test name="Validate the Title of Home Page">
 		<classes>
 			<class name="Academy.validateTitle" />
 		</classes>
@@ -14,7 +14,7 @@
 		<classes>
 			<class name="Academy.validateNavigationBar" />
 		</classes>
-	</test-->
+	</test>
 	<test name="Validate User Login">
 		<classes>
 			<class name="Academy.HomePage" />
