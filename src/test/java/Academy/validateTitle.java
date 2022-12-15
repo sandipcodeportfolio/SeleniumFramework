@@ -40,7 +40,7 @@ public class validateTitle extends base {
 	@AfterTest
 	public void teardown() {
 
-		driver.close();
+		//driver.close();
 		driver = null;
 		log.info("The Login Process is completed");
 
