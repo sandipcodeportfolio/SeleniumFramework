@@ -41,7 +41,7 @@ public class base {
 
 		} else if (browserName.equals("firefox")) {
 			// setup Firefox WebDriver
-			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/src/main/java/resources/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/src/main/java/resources/geckodriver");
 			driver = new FirefoxDriver();
 
 		} else if (browserName.equals("IE")) {
