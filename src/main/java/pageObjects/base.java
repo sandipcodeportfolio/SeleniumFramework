@@ -32,7 +32,7 @@ public class base {
 
 		if (browserName.equals("chrome")) {
 			// setup Chrome WebDriver
-			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/src/main/java/resources/geckodriver.exe");
+			System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/resources/chromedriver");
 			ChromeOptions options = new ChromeOptions();
 			//options.addArguments("--headless");
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
@@ -41,6 +41,7 @@ public class base {
 
 		} else if (browserName.equals("firefox")) {
 			// setup Firefox WebDriver
+			System.setProperty("webdriver.gecko.driver",System.getProperty("user.dir")+"/src/main/java/resources/geckodriver.exe");
 			driver = new FirefoxDriver();
 
 		} else if (browserName.equals("IE")) {
