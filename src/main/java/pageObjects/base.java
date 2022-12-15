@@ -32,7 +32,7 @@ public class base {
 
 		if (browserName.equals("chrome")) {
 			// setup Chrome WebDriver
-			System.setProperty("chromedriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/resources/chromedriver");
+			System.setProperty("chromedriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/resources/geckodriver.exe");
 			ChromeOptions options = new ChromeOptions();
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 			driver = new ChromeDriver(options);
