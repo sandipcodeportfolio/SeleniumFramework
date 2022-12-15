@@ -34,6 +34,7 @@ public class base {
 			// setup Chrome WebDriver
 			System.setProperty("chromedriver.chrome.driver",System.getProperty("user.dir")+"/src/main/java/resources/chromedriver");
 			ChromeOptions options = new ChromeOptions();
+			options.addArguments("--headless");
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 			driver = new ChromeDriver(options);
 			System.out.println("Driver Intialize");
