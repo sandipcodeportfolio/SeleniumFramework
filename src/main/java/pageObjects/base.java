@@ -36,6 +36,7 @@ public class base {
 			ChromeOptions options = new ChromeOptions();
 			options.setPageLoadStrategy(PageLoadStrategy.NONE);
 			driver = new ChromeDriver(options);
+			System.out.println("Driver Intialize");
 
 		} else if (browserName.equals("firefox")) {
 			// setup Firefox WebDriver
