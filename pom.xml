@@ -8,6 +8,7 @@
 	<properties>
 		<maven.compiler.source>17</maven.compiler.source>
 		<maven.compiler.target>17</maven.compiler.target>
+		<jenkins.version>1.625</jenkins.version>
 	</properties>
 	<version>1.0-SNAPSHOT</version>
 	<name>E2EProject</name>
@@ -109,7 +110,4 @@
 		 <version>2.33</version>
 		 <relativePath />
 	 </parent>
-	 <properties>
-		 <jenkins.version>1.625</jenkins.version>
-	 </properties>
  </project>
