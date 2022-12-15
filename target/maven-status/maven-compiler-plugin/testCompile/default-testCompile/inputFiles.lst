@@ -1,5 +1,5 @@
-/home/sandip/Downloads/Framework/BuildAutoFWKFromScratch-master/src/test/java/Academy/AppTest.java
-/home/sandip/Downloads/Framework/BuildAutoFWKFromScratch-master/src/test/java/Academy/validateTitle.java
-/home/sandip/Downloads/Framework/BuildAutoFWKFromScratch-master/src/test/java/Academy/listeners.java
-/home/sandip/Downloads/Framework/BuildAutoFWKFromScratch-master/src/test/java/Academy/HomePage.java
-/home/sandip/Downloads/Framework/BuildAutoFWKFromScratch-master/src/test/java/Academy/validateNavigationBar.java
+/home/sandip/SeleniumFramework/src/test/java/Academy/AppTest.java
+/home/sandip/SeleniumFramework/src/test/java/Academy/HomePage.java
+/home/sandip/SeleniumFramework/src/test/java/Academy/validateNavigationBar.java
+/home/sandip/SeleniumFramework/src/test/java/Academy/listeners.java
+/home/sandip/SeleniumFramework/src/test/java/Academy/validateTitle.java

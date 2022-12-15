@@ -6,29 +6,28 @@ import org.openqa.selenium.WebElement;
 
 public class LandingPage {
 
-	public WebDriver driver;
+    public WebDriver driver;
+    By signin = By.cssSelector("a[href*='sign_in']");
+    By title = By.xpath("//section[@id='content']/div/div/h2");
+    By navBar = By.cssSelector("nav.navbar-collapse.collapse");
+    public LandingPage(WebDriver driver) {
 
-	public LandingPage(WebDriver driver) {
+        this.driver = driver;
+    }
 
-		this.driver = driver;
-	}
+    public WebElement getLogin() {
 
-	By signin = By.cssSelector("a[href*='sign_in']");
-	By title = By.xpath("//section[@id='content']/div/div/h2");
-	By navBar = By.cssSelector("nav.navbar-collapse.collapse");
-
-	public WebElement getLogin() {
 		return driver.findElement(signin);
-	}
+    }
 
-	public WebElement getTitle() {
+    public WebElement getTitle() {
 
-		return driver.findElement(title);
-	}
+        return driver.findElement(title);
+    }
 
-	public WebElement getNavBar() {
+    public WebElement getNavBar() {
 
-		return driver.findElement(navBar);
-	}
+        return driver.findElement(navBar);
+    }
 
 }
